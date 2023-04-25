@@ -2,7 +2,7 @@
 #SBATCH --partition=debug
 #SBATCH --ntasks=24
 #SBATCH --tasks-per-node=24
-#SBATCH -o /home/oihernandez/lab5/slurm.out
+#SBATCH -o /home/oihernandez/lab5/slurm.txt
 #SBATCH --mail-user=oihernandez@alaska.edu
 
 #module load GCC
