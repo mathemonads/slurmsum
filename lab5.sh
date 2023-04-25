@@ -2,10 +2,11 @@
 #SBATCH --partition=debug
 #SBATCH --ntasks=24
 #SBATCH --tasks-per-node=24
-#SBATCH -o /home/oihernandez/lab5/slurm.txt
+#SBATCH -o ./slurm.txt
 #SBATCH --mail-user=oihernandez@alaska.edu
 
-#module load GCC
-gcc -o /home/oihernandez/lab5/lab5.out /home/oihernandez/lab5/lab5.c
+module load GCC
+
+gcc -o ./lab5.out ./lab5.c
 echo "Beginning ... "
-/home/oihernandez/lab5/lab5.out
+./lab5.out
